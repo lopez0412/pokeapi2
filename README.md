@@ -18,7 +18,7 @@ A modern, production-ready iOS application built with **Clean Architecture**, **
 | Search Functionality | Stats Visualization |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/24bee613-da96-4d03-bed2-1a977e0dc3a7" alt="Search" width="250"/> | <img src="https://github.com/user-attachments/assets/080bb2b3-5d83-47d1-be3f-00f7166990ff" alt="Stats View" width="250"/> |
-| Real-time search with debounced input and instant filtering | Animated stat bars with color-coded values |
+| Real-time search  | Animated stat bars  |
 
 ---
 
@@ -50,7 +50,7 @@ This project demonstrates **senior-level iOS development** practices with a focu
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                     PRESENTATION                         │
+│                     PRESENTATION                        │
 │  (Views, ViewModels, Coordinators - SwiftUI)            │
 │  • PokemonListView, PokemonDetailView                   │
 │  • PokemonListViewModel (MVVM)                          │
@@ -58,7 +58,7 @@ This project demonstrates **senior-level iOS development** practices with a focu
 └────────────────────┬────────────────────────────────────┘
                      │
 ┌────────────────────▼────────────────────────────────────┐
-│                      DOMAIN                              │
+│                      DOMAIN                             │
 │  (Business Logic, Entities, Use Cases)                  │
 │  • Pokemon, PokemonStat, PokemonType                    │
 │  • FetchPokemonListUseCase                              │
@@ -67,7 +67,7 @@ This project demonstrates **senior-level iOS development** practices with a focu
 └────────────────────┬────────────────────────────────────┘
                      │
 ┌────────────────────▼────────────────────────────────────┐
-│                       DATA                               │
+│                       DATA                              │
 │  (Repositories, Data Sources, DTOs)                     │
 │  • PokemonRepository (Network)                          │
 │  • LocalStorageRepository (Core Data)                   │
@@ -76,7 +76,7 @@ This project demonstrates **senior-level iOS development** practices with a focu
 └────────────────────┬────────────────────────────────────┘
                      │
 ┌────────────────────▼────────────────────────────────────┐
-│                  INFRASTRUCTURE                          │
+│                  INFRASTRUCTURE                         │
 │  (Framework-specific implementations)                   │
 │  • CoreDataStack                                        │
 │  • NotificationManager                                  │
@@ -335,86 +335,6 @@ Each Pokemon card features a gradient based on its type(s):
 
 ---
 
-## 📁 Project Structure
-
-```
-PokemonApp/
-├── App/
-│   ├── pokeapi2App.swift          # App entry point
-│   └── AppDelegate.swift          # Background fetch delegate
-│
-├── Core/
-│   ├── Domain/
-│   │   ├── Entities/
-│   │   │   └── Pokemon.swift
-│   │   ├── UseCases/
-│   │   │   ├── FetchPokemonListUseCase.swift
-│   │   │   └── BackgroundFetchUseCase.swift
-│   │   └── RepositoryInterfaces/
-│   │       ├── PokemonRepositoryProtocol.swift
-│   │       └── LocalStorageRepositoryProtocol.swift
-│   │
-│   ├── Data/
-│   │   ├── Repositories/
-│   │   │   ├── PokemonRepository.swift
-│   │   │   └── LocalStorageRepository.swift
-│   │   ├── DataSources/
-│   │   │   ├── Remote/
-│   │   │   │   └── NetworkClient.swift
-│   │   │   └── Local/
-│   │   │       └── PokemonEntity+CoreData.swift
-│   │   └── DTOs/
-│   │       ├── PokemonListDTO.swift
-│   │       └── PokemonDetailDTO.swift
-│   │
-│   └── Presentation/
-│       ├── Coordinators/
-│       │   └── PokemonListCoordinator.swift
-│       ├── Scenes/
-│       │   ├── PokemonList/
-│       │   │   ├── PokemonListView.swift
-│       │   │   ├── PokemonListViewModel.swift
-│       │   │   └── Components/
-│       │   │       ├── PokemonCell.swift
-│       │   │       └── LoadingView.swift
-│       │   └── PokemonDetail/
-│       │       └── PokemonDetailView.swift
-│       └── Common/
-│           └── Extensions/
-│               ├── Color+Extensions.swift
-│               └── Color+Theme.swift
-│
-├── Infrastructure/
-│   ├── Network/
-│   │   ├── NetworkError.swift
-│   │   └── APIEndpoint.swift
-│   ├── Storage/
-│   │   ├── CoreDataStack.swift
-│   │   └── pokeapi2.xcdatamodeld
-│   ├── BackgroundTasks/
-│   │   └── BackgroundTaskManager.swift
-│   └── Notifications/
-│       └── NotificationManager.swift
-│
-├── Utilities/
-│   └── Helpers/
-│       └── Logger.swift
-│
-└── Tests/
-    ├── Domain/
-    │   ├── FetchPokemonListUseCaseTests.swift
-    │   └── BackgroundFetchUseCaseTests.swift
-    ├── Data/
-    │   └── LocalStorageRepositoryTests.swift
-    ├── Mocks/
-    │   ├── MockPokemonRepository.swift
-    │   └── MockLocalStorageRepository.swift
-    └── Helpers/
-        └── TestData.swift
-```
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -483,18 +403,6 @@ open pokeapi2.xcodeproj
 
 ---
 
-## 🤝 Contributing
-
-This is a technical test project, but suggestions and feedback are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -511,9 +419,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Your Name** - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
+**Javier Lorenzana** -  lopez.javier0412@gmail.com
 
-**Project Link**: [https://github.com/yourusername/pokeapi2](https://github.com/yourusername/pokeapi2)
+**Project Link**: [https://github.com/lopez0412/pokeapi2](https://github.com/lopez0412/pokeapi2)
 
 ---
 
