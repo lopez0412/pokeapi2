@@ -10,7 +10,15 @@ A modern, production-ready iOS application built with **Clean Architecture**, **
 
 ## 📸 Screenshots
 
+| Pokemon List | Pokemon Detail |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/c6fe2f0e-ae6a-49ea-b15e-397192f70ad9" alt="Pokemon List" width="250"/> | <img src="https://github.com/user-attachments/assets/ce9c8cbc-3f01-4d30-a635-f83381e02e4e" alt="Pokemon Detail" width="250"/> |
+| Browse all Pokemon with beautiful cards | Notifications |
 
+| Search Functionality | Stats Visualization |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/24bee613-da96-4d03-bed2-1a977e0dc3a7" alt="Search" width="250"/> | <img src="https://github.com/user-attachments/assets/080bb2b3-5d83-47d1-be3f-00f7166990ff" alt="Stats View" width="250"/> |
+| Real-time search with debounced input and instant filtering | Animated stat bars with color-coded values |
 
 ---
 
